@@ -57,7 +57,7 @@ const sortedSquaredArray = (arr) => {
       squared[i] = smallerValue * smallerValue; // if true, then multiply the smaller value by itself and assign it to the current index of the squared array
       smallerValueIndex += 1; // increment the pointer
     } else {
-      // if the smaller value is greater than the larger value
+      // if false
       squared[i] = largerValue * largerValue; //then multiply the larger value by itself and assign it to the current index of the squared array
       largerValueIndex -= 1; //increment the pointer
     }

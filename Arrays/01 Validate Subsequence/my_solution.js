@@ -14,14 +14,14 @@
 
 function validateSubsequence(array, sequence) {
   // given array and sub array
-  let seqIdx = 0; // assigning the index to 0
+  let seqIdx = 0; // assigning the index of sequence array to 0
   for (let i = 0; i <= array.length; i++) {
     // looping through the array
     if (seqIdx === sequence.length) return true; // if the index of the sub array is equal to the length of the sub array return true
 
     if (array[i] === sequence[seqIdx]) {
       // if the value of the array is equal to the value of the sub array
-      seqIdx++; // increment the index
+      seqIdx++; // increment the sequence index
     }
   }
   return seqIdx === sequence.length; // return is the index of the sub array is equal to the length of the sub array (true or false)

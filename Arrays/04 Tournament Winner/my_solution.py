@@ -38,4 +38,4 @@ def updateScores(team, points, scores):  # we have team, points and scores
     scores[team] += points  # we will add the points to the score of the team
 
 
-print(tournament_winner([["A", "B"], ["B", "C"], ["C", "A"]], [0, 0, 0]))
+print(tournament_winner([["A", "B"], ["B", "C"], ["C", "A"]], [1, 0, 0]))
