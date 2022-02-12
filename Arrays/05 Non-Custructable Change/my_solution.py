@@ -1,6 +1,9 @@
 # non-constructable change
 # O(nlogn) time | O(1) space
 # Given an array of positive integers representing the values of coins in your possession, write a function that returns the minimum amount of change(the minimum sum of money) that you cannot create.
+
+
+# given an array of coin values, find the change that can't be made with the coins
 def nonConstructableChange(coins):
     coins.sort()
     currentChangeCreated = 0  # 7
@@ -12,4 +15,4 @@ def nonConstructableChange(coins):
     return currentChangeCreated + 1
 
 
-print(nonConstructableChange([1, 2, 3]))
+print(nonConstructableChange([1, 1, 4]))
