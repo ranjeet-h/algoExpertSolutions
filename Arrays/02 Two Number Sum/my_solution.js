@@ -20,11 +20,15 @@
 // function twoNumberSum(array, targetSum) {
 //   let nums = {}; // creating an object to store the values of the array in the values : true/false format
 
-//   for (let i = 0; i < array.length - 1; i++) { // looping through the array
+//   for (let i = 0; i < array.length - 1; i++) {
+//     // looping through the array
 //     let potentialSum = targetSum - array[i]; // subtracting the value of the array from the target sum
-//     if (nums[potentialSum]) { // if the potential sum is present in the object
+//     console.log(potentialSum, nums);
+//     if (nums[potentialSum]) {
+//       // if the potential sum is present in the object
 //       return [potentialSum, array[i]]; // return the pair of the two numbers
-//     } else { // if the potential sum is not present in the object
+//     } else {
+//       // if the potential sum is not present in the object
 //       nums[array[i]] = true; // add the value of the array to the object
 //     }
 //   }
@@ -40,6 +44,7 @@ function twoNumberSum(array, targetSum) {
   let left = 0; // assign the pointer to left of the array
   let right = array.length - 1; // assign the pointer to right of the array
   while (left < right) {
+    // console.log(left, right);
     // while the left pointer is less than the right pointer
     let currentSum = array[left] + array[right]; // add the value of the left pointer to the value of the right pointer
     if (currentSum === targetSum) {
@@ -56,4 +61,4 @@ function twoNumberSum(array, targetSum) {
   return []; // return an empty array
 }
 
-console.log(twoNumberSum([1, 2, 3, 4, 5], 7));
+console.log(twoNumberSum([1, 2, 3, 4, 5], 9));
