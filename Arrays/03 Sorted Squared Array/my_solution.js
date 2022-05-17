@@ -62,7 +62,7 @@ const sortedSquaredArray = (arr) => {
       largerValueIndex -= 1; //increment the pointer
     }
   }
-  return squared; //return the squared array
+  return squared; //return the square array
 };
 
 console.log(sortedSquaredArray([-4, -1, 0, 3, 10]));
